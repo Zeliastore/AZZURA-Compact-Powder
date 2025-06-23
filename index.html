@@ -3,1123 +3,561 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Botol Lipat Silikon - Praktis & Hemat Tempat!</title>
-    <meta name="description" content="Botol minum lipat silikon food grade yang praktis dan hemat tempat. Cocok untuk traveling, olahraga, dan aktivitas sehari-hari.">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <title>AZZURA Compact Powder - Wajah Segar & Matte dalam Seketika!</title>
     <style>
+        /* Global Styles */
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-        }
-
-        body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            overflow-x: hidden;
         }
-
+        
+        body {
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+        }
+        
         .container {
             max-width: 1200px;
             margin: 0 auto;
             padding: 0 20px;
         }
-
-        /* Floating Action Button */
-        .floating-cta {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            z-index: 1000;
-            animation: pulse 2s infinite;
-        }
-
-        .floating-cta a {
-            display: block;
-            background: linear-gradient(135deg, #ff6b6b, #ee5a24);
+        
+        /* Header Styles */
+        header {
+            background: linear-gradient(135deg, #000000, #333333);
             color: white;
-            padding: 15px 25px;
-            border-radius: 50px;
-            text-decoration: none;
-            font-weight: bold;
-            box-shadow: 0 8px 25px rgba(238, 90, 36, 0.4);
-            transition: all 0.3s ease;
-        }
-
-        .floating-cta a:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 12px 35px rgba(238, 90, 36, 0.6);
-        }
-
-        /* Header Hero Section */
-        .hero {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .hero::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><circle cx="200" cy="200" r="100" fill="rgba(255,255,255,0.1)"/><circle cx="800" cy="800" r="150" fill="rgba(255,255,255,0.05)"/><circle cx="900" cy="200" r="80" fill="rgba(255,255,255,0.08)"/></svg>');
-            animation: float 20s infinite linear;
-        }
-
-        .hero-content {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 50px;
-            align-items: center;
-            z-index: 2;
-            position: relative;
-        }
-
-        .hero-text {
-            color: white;
-        }
-
-        .hero-text h1 {
-            font-size: 3.5rem;
-            font-weight: 800;
-            margin-bottom: 20px;
-            line-height: 1.2;
-            animation: slideInLeft 1s ease-out;
-        }
-
-        .hero-text .subtitle {
-            font-size: 1.3rem;
-            margin-bottom: 30px;
-            opacity: 0.9;
-            animation: slideInLeft 1s ease-out 0.2s both;
-        }
-
-        .hero-stats {
-            display: flex;
-            gap: 30px;
-            margin-bottom: 40px;
-            animation: slideInLeft 1s ease-out 0.4s both;
-        }
-
-        .stat-item {
+            padding: 20px 0;
             text-align: center;
         }
-
-        .stat-number {
-            font-size: 2rem;
-            font-weight: bold;
-            color: #ffd700;
-        }
-
-        .stat-label {
-            font-size: 0.9rem;
-            opacity: 0.8;
-        }
-
-        .hero-image {
-            text-align: center;
-            animation: slideInRight 1s ease-out;
-        }
-
-        .hero-image img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 20px;
-            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
-            transition: transform 0.3s ease;
-        }
-
-        .hero-image img:hover {
-            transform: scale(1.05);
-        }
-
-        .cta-button {
-            display: inline-block;
-            background: linear-gradient(135deg, #ff6b6b, #ee5a24);
-            color: white;
-            padding: 18px 40px;
-            text-decoration: none;
-            border-radius: 50px;
-            font-weight: bold;
-            font-size: 1.1rem;
-            transition: all 0.3s ease;
-            box-shadow: 0 8px 25px rgba(238, 90, 36, 0.4);
-            animation: slideInLeft 1s ease-out 0.6s both;
-        }
-
-        .cta-button:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 12px 35px rgba(238, 90, 36, 0.6);
-        }
-
-        /* Countdown Timer */
-        .countdown-section {
-            background: #2c3e50;
-            color: white;
-            padding: 30px 0;
-            text-align: center;
-        }
-
-        .countdown-timer {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            margin-top: 20px;
-        }
-
-        .countdown-item {
-            background: rgba(255,255,255,0.1);
-            padding: 15px;
-            border-radius: 10px;
-            min-width: 80px;
-        }
-
-        .countdown-number {
-            font-size: 2rem;
-            font-weight: bold;
-            color: #ffd700;
-        }
-
-        .countdown-label {
-            font-size: 0.8rem;
-            opacity: 0.8;
-        }
-
-        /* Features Section */
-        .features {
-            padding: 100px 0;
-            background: #f8f9fa;
-        }
-
-        .section-title {
-            text-align: center;
-            font-size: 2.5rem;
-            font-weight: bold;
-            margin-bottom: 20px;
-            color: #2c3e50;
-        }
-
-        .section-subtitle {
-            text-align: center;
-            font-size: 1.1rem;
-            color: #666;
-            margin-bottom: 60px;
-        }
-
-        .features-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 40px;
-        }
-
-        .feature-card {
-            background: white;
-            padding: 40px 30px;
-            border-radius: 20px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-            text-align: center;
-            transition: all 0.3s ease;
-            border: 1px solid #eee;
-        }
-
-        .feature-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 20px 50px rgba(0,0,0,0.15);
-        }
-
-        .feature-icon {
-            font-size: 3rem;
-            color: #667eea;
-            margin-bottom: 20px;
-        }
-
-        .feature-title {
-            font-size: 1.3rem;
-            font-weight: bold;
-            margin-bottom: 15px;
-            color: #2c3e50;
-        }
-
-        .feature-description {
-            color: #666;
-            line-height: 1.6;
-        }
-
-        /* Product Gallery */
-        .gallery {
-            padding: 100px 0;
-            background: white;
-        }
-
-        .gallery-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 30px;
-            margin-top: 50px;
-        }
-
-        .gallery-item {
-            position: relative;
-            border-radius: 15px;
-            overflow: hidden;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-            transition: all 0.3s ease;
-        }
-
-        .gallery-item:hover {
-            transform: scale(1.05);
-            box-shadow: 0 20px 50px rgba(0,0,0,0.2);
-        }
-
-        .gallery-item img {
-            width: 100%;
-            height: 250px;
-            object-fit: cover;
-        }
-
-        /* How to Use */
-        .how-to-use {
-            padding: 100px 0;
-            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
-            color: white;
-        }
-
-        .steps {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 40px;
-            margin-top: 50px;
-        }
-
-        .step {
-            text-align: center;
-            position: relative;
-        }
-
-        .step-number {
-            display: inline-block;
-            width: 60px;
-            height: 60px;
-            background: rgba(255,255,255,0.2);
-            border-radius: 50%;
-            line-height: 60px;
-            font-size: 1.5rem;
-            font-weight: bold;
-            margin-bottom: 20px;
-        }
-
-        .step-title {
-            font-size: 1.2rem;
+        
+        .logo {
+            font-size: 20px;
             font-weight: bold;
             margin-bottom: 10px;
         }
-
-        .step-description {
+        
+        .tagline {
+            font-size: 10px;
             opacity: 0.9;
         }
-
-        /* Testimonials */
-        .testimonials {
-            padding: 100px 0;
-            background: #f8f9fa;
+        
+        /* Hero Section */
+        .hero {
+            display: flex;
+            align-items: center;
+            padding: 50px 0;
+            background-color: white;
         }
-
+        
+        .hero-content {
+            flex: 1;
+            padding-right: 40px;
+        }
+        
+        .hero-image {
+            flex: 1;
+            text-align: center;
+        }
+        
+        .hero-image img {
+            max-width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        
+        h1 {
+            font-size: 42px;
+            margin-bottom: 20px;
+            color: #222;
+        }
+        
+        .highlight {
+            color: #e63946;
+            font-weight: bold;
+        }
+        
+        .price {
+            margin: 25px 0;
+        }
+        
+        .original-price {
+            text-decoration: line-through;
+            color: #999;
+            font-size: 24px;
+        }
+        
+        .discounted-price {
+            font-size: 36px;
+            color: #e63946;
+            font-weight: bold;
+        }
+        
+        .discount-badge {
+            background-color: #e63946;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 18px;
+            display: inline-block;
+            margin-left: 15px;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background: linear-gradient(135deg, #e63946, #d62839);
+            color: white;
+            padding: 15px 40px;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 50px;
+            text-decoration: none;
+            margin-top: 20px;
+            box-shadow: 0 5px 15px rgba(230, 57, 70, 0.4);
+            transition: all 0.3s ease;
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(230, 57, 70, 0.6);
+        }
+        
+        .countdown {
+            margin-top: 30px;
+            background-color: #f8f8f8;
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        
+        .countdown-text {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        
+        .timer {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+        
+        .timer-unit {
+            background-color: #222;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        
+        /* Features Section */
+        .features {
+            padding: 60px 0;
+            background-color: #f1f1f1;
+        }
+        
+        .section-title {
+            text-align: center;
+            font-size: 20px;
+            margin-bottom: 20px;
+            color: #222;
+        }
+        
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+        
+        .feature-card {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            transition: all 0.3s ease;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+        
+        .feature-icon {
+            font-size: 40px;
+            margin-bottom: 20px;
+            color: #e63946;
+        }
+        
+        .feature-title {
+            font-size: 20px;
+            margin-bottom: 15px;
+            color: #222;
+        }
+        
+        /* Gallery Section */
+        .gallery {
+            padding: 60px 0;
+            background-color: white;
+        }
+        
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            margin-top: 30px;
+        }
+        
+        .gallery-item {
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+        }
+        
+        .gallery-item:hover {
+            transform: scale(1.03);
+        }
+        
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        /* Testimonials Section */
+        .testimonials {
+            padding: 60px 0;
+            background-color: #f1f1f1;
+        }
+        
         .testimonials-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            grid-template-columns: repeat(3, 1fr);
             gap: 30px;
-            margin-top: 50px;
         }
-
-        .testimonial {
-            background: white;
+        
+        .testimonial-card {
+            background-color: white;
             padding: 30px;
-            border-radius: 15px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-            position: relative;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
         }
-
-        .testimonial::before {
-            content: '"';
-            font-size: 4rem;
-            color: #667eea;
-            position: absolute;
-            top: -10px;
-            left: 20px;
-            font-family: serif;
-        }
-
+        
         .testimonial-text {
             font-style: italic;
             margin-bottom: 20px;
-            color: #555;
-            line-height: 1.6;
         }
-
+        
         .testimonial-author {
-            display: flex;
-            align-items: center;
-            gap: 15px;
-        }
-
-        .author-avatar {
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            background: linear-gradient(135deg, #667eea, #764ba2);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
             font-weight: bold;
+            color: #222;
         }
-
-        .author-info h4 {
-            color: #2c3e50;
-            margin-bottom: 5px;
-        }
-
-        .author-info p {
-            color: #666;
-            font-size: 0.9rem;
-        }
-
-        .rating {
-            color: #ffd700;
+        
+        .testimonial-rating {
+            color: #ffc107;
             margin-top: 5px;
         }
-
-        /* Pricing Banner */
-        .pricing-banner {
-            background: linear-gradient(135deg, #ff6b6b, #ee5a24);
+        
+        /* FAQ Section */
+        .faq {
+            padding: 60px 0;
+            background-color: white;
+        }
+        
+        .faq-item {
+            margin-bottom: 20px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 20px;
+        }
+        
+        .faq-question {
+            font-weight: bold;
+            font-size: 20px;
+            margin-bottom: 10px;
+            color: #222;
+        }
+        
+        /* Guarantee Section */
+        .guarantee {
+            padding: 60px 0;
+            background-color: #222;
             color: white;
-            padding: 80px 0;
-            text-align: center;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .pricing-banner::before {
-            content: '';
-            position: absolute;
-            top: -50%;
-            left: -50%;
-            width: 200%;
-            height: 200%;
-            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="20" cy="20" r="10" fill="rgba(255,255,255,0.1)"/><circle cx="80" cy="80" r="15" fill="rgba(255,255,255,0.05)"/></svg>');
-            animation: rotate 30s infinite linear;
-        }
-
-        .pricing-content {
-            position: relative;
-            z-index: 2;
-        }
-
-        .price-comparison {
-            display: flex;
-            justify-content: center;
-            gap: 50px;
-            margin: 40px 0;
-            flex-wrap: wrap;
-        }
-
-        .price-option {
-            background: rgba(255,255,255,0.1);
-            padding: 30px;
-            border-radius: 15px;
-            backdrop-filter: blur(10px);
-            border: 2px solid rgba(255,255,255,0.2);
-        }
-
-        .price-option.popular {
-            border-color: #ffd700;
-            transform: scale(1.05);
-        }
-
-        .price-option.popular::before {
-            content: 'PALING LARIS';
-            position: absolute;
-            top: -15px;
-            left: 50%;
-            transform: translateX(-50%);
-            background: #ffd700;
-            color: #2c3e50;
-            padding: 5px 20px;
-            border-radius: 20px;
-            font-size: 0.8rem;
-            font-weight: bold;
-        }
-
-        .old-price {
-            text-decoration: line-through;
-            opacity: 0.7;
-            font-size: 1.1rem;
-        }
-
-        .current-price {
-            font-size: 2.5rem;
-            font-weight: bold;
-            color: #ffd700;
-            margin: 10px 0;
-        }
-
-        .price-label {
-            font-size: 1.1rem;
-            margin-bottom: 15px;
-        }
-
-        .savings {
-            background: #ffd700;
-            color: #2c3e50;
-            padding: 5px 15px;
-            border-radius: 20px;
-            font-weight: bold;
-            display: inline-block;
-            margin-top: 10px;
-        }
-
-        /* Footer */
-        .footer {
-            background: #2c3e50;
-            color: white;
-            padding: 50px 0 30px;
             text-align: center;
         }
-
-        .footer-content {
-            margin-bottom: 30px;
+        
+        .guarantee-icon {
+            font-size: 60px;
+            margin-bottom: 20px;
+            color: #e63946;
         }
-
-        .footer-title {
-            font-size: 1.5rem;
-            font-weight: bold;
-            margin-bottom: 15px;
+        
+        .guarantee-text {
+            max-width: 800px;
+            margin: 0 auto;
+            font-size: 18px;
         }
-
-        .footer-description {
-            opacity: 0.8;
-            max-width: 600px;
-            margin: 0 auto 30px;
-        }
-
-        .final-cta {
-            display: inline-block;
-            background: linear-gradient(135deg, #ff6b6b, #ee5a24);
+        
+        /* Footer CTA */
+        .footer-cta {
+            padding: 60px 0;
+            background: linear-gradient(135deg, #000000, #333333);
             color: white;
-            padding: 20px 50px;
-            text-decoration: none;
-            border-radius: 50px;
-            font-weight: bold;
-            font-size: 1.2rem;
-            transition: all 0.3s ease;
-            box-shadow: 0 10px 30px rgba(238, 90, 36, 0.4);
+            text-align: center;
         }
-
-        .final-cta:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 15px 40px rgba(238, 90, 36, 0.6);
+        
+        .footer-cta h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
         }
-
-        .copyright {
-            border-top: 1px solid rgba(255,255,255,0.1);
-            padding-top: 20px;
-            opacity: 0.6;
-        }
-
-        /* Animations */
-        @keyframes slideInLeft {
-            from {
-                opacity: 0;
-                transform: translateX(-100px);
-            }
-            to {
-                opacity: 1;
-                transform: translateX(0);
-            }
-        }
-
-        @keyframes slideInRight {
-            from {
-                opacity: 0;
-                transform: translateX(100px);
-            }
-            to {
-                opacity: 1;
-                transform: translateX(0);
-            }
-        }
-
-        @keyframes pulse {
-            0%, 100% {
-                transform: scale(1);
-            }
-            50% {
-                transform: scale(1.05);
-            }
-        }
-
-        @keyframes float {
-            0% {
-                transform: translateY(0px);
-            }
-            50% {
-                transform: translateY(-20px);
-            }
-            100% {
-                transform: translateY(0px);
-            }
-        }
-
-        @keyframes rotate {
-            from {
-                transform: rotate(0deg);
-            }
-            to {
-                transform: rotate(360deg);
-            }
-        }
-
-        /* Mobile Responsive */
-        @media (max-width: 768px) {
-            .hero-content {
-                grid-template-columns: 1fr;
-                text-align: center;
-                gap: 30px;
-            }
-
-            .hero-text h1 {
-                font-size: 2.5rem;
-            }
-
-            .hero-stats {
-                justify-content: center;
-                gap: 20px;
-            }
-
-            .countdown-timer {
-                gap: 10px;
-            }
-
-            .countdown-item {
-                min-width: 60px;
-                padding: 10px;
-            }
-
-            .countdown-number {
-                font-size: 1.5rem;
-            }
-
-            .price-comparison {
+        
+        /* Responsive Styles */
+        @media (max-width: 992px) {
+            .hero {
                 flex-direction: column;
-                align-items: center;
-                gap: 20px;
             }
-
-            .floating-cta {
-                bottom: 10px;
-                right: 10px;
+            
+            .hero-content {
+                padding-right: 0;
+                margin-bottom: 40px;
+                text-align: center;
             }
-
-            .floating-cta a {
-                padding: 12px 20px;
-                font-size: 0.9rem;
+            
+            .features-grid, .testimonials-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .gallery-grid {
+                grid-template-columns: repeat(2, 1fr);
             }
         }
-
-        @media (max-width: 480px) {
-            .container {
-                padding: 0 15px;
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 32px;
             }
-
-            .hero-text h1 {
-                font-size: 2rem;
-            }
-
-            .section-title {
-                font-size: 2rem;
-            }
-
-            .current-price {
-                font-size: 2rem;
+            
+            .features-grid, .testimonials-grid, .gallery-grid {
+                grid-template-columns: 1fr;
             }
         }
     </style>
 </head>
 <body>
-    <!-- Floating CTA Button -->
-    <div class="floating-cta">
-        <a href="https://nava.orderonline.id/checkout-silicone-folding-water-bottle" target="_blank">
-            <i class="fas fa-shopping-cart"></i> PESAN SEKARANG
-        </a>
-    </div>
-
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">AZZURA COMPACT POWDER</div>
+            <div class="tagline">Wajah Bebas Minyak Sepanjang Hari Dapatkan makeup sempurna dengan AZZURA Compact Powder yang mengandung Amazonian Clay untuk menyerap minyak berlebih dan SPF 21 PA++ untuk perlindungan optimal dari sinar UV.</div>
+        </div>
+    </header>
+    
     <!-- Hero Section -->
     <section class="hero">
         <div class="container">
             <div class="hero-content">
-                <div class="hero-text">
-                    <h1>Botol Lipat Silikon<br>Yang Mengubah Hidup!</h1>
-                    <p class="subtitle">Praktis, hemat tempat, dan ramah lingkungan. Solusi sempurna untuk gaya hidup aktif Anda!</p>
-                    
-                    <div class="hero-stats">
-                        <div class="stat-item">
-                            <div class="stat-number" id="viewers">2,847</div>
-                            <div class="stat-label">Sedang Melihat</div>
+            <div class="hero-image">
+                <img src="https://down-id.img.susercontent.com/file/97a99c9c6ade01b2f6e1a9a9ad239ac7.webp" alt="AZZURA Compact Powder">
+            </div>
+                <div class="price">
+                    <div class="original-price">Rp 399.999</div>
+                    <div>
+                        <span class="discounted-price">Rp 199.999</span>
+                        <span class="discount-badge">DISKON 49%</span>
+                    </div>
+                    <div class="promo-text">SPESIAL HOT PROMO SALE (BELI 1 GRATIS 1)</div>
+                </div>
+                
+                <a href="https://nava.orderonline.id/azzura-compact-powder" class="cta-button">PESAN SEKARANG</a>
+                
+                <div class="countdown">
+                    <div class="countdown-text">PROMO BERAKHIR DALAM:</div>
+                    <div class="timer">
+                        <div class="timer-unit">
+                            <div id="hours">23</div>
+                            <div>Jam</div>
                         </div>
-                        <div class="stat-item">
-                            <div class="stat-number" id="stock">47</div>
-                            <div class="stat-label">Stok Tersisa</div>
+                        <div class="timer-unit">
+                            <div id="minutes">59</div>
+                            <div>Menit</div>
                         </div>
-                        <div class="stat-item">
-                            <div class="stat-number">4.9★</div>
-                            <div class="stat-label">Rating</div>
+                        <div class="timer-unit">
+                            <div id="seconds">59</div>
+                            <div>Detik</div>
                         </div>
                     </div>
-
-                    <a href="#pricing" class="cta-button">
-                        <i class="fas fa-fire"></i> AMBIL PROMO SEKARANG!
-                    </a>
                 </div>
-                <div class="hero-image">
-                    <img src="https://down-id.img.susercontent.com/file/sg-11134201-7rbm2-m5i7693ves8wc5.webp" alt="Botol Lipat Silikon Premium">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Countdown Timer -->
-    <section class="countdown-section">
-        <div class="container">
-            <h3><i class="fas fa-clock"></i> PROMO TERBATAS BERAKHIR DALAM:</h3>
-            <div class="countdown-timer">
-                <div class="countdown-item">
-                    <div class="countdown-number" id="hours">23</div>
-                    <div class="countdown-label">Jam</div>
-                </div>
-                <div class="countdown-item">
-                    <div class="countdown-number" id="minutes">45</div>
-                    <div class="countdown-label">Menit</div>
-                </div>
-                <div class="countdown-item">
-                    <div class="countdown-number" id="seconds">32</div>
-                    <div class="countdown-label">Detik</div>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- Features Section -->
     <section class="features">
         <div class="container">
-            <h2 class="section-title">Mengapa Pilih Botol Lipat Kami?</h2>
-            <p class="section-subtitle">Fitur-fitur unggulan yang membuat hidup Anda lebih praktis dan efisien</p>
-            
+            <h2 class="section-title">Keunggulan AZZURA Compact Powder</h2>
             <div class="features-grid">
                 <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-compress-alt"></i>
-                    </div>
-                    <h3 class="feature-title">Dapat Dilipat 70%</h3>
-                    <p class="feature-description">Hemat ruang hingga 70% saat tidak digunakan. Cocok untuk tas kecil, travel, dan aktivitas outdoor.</p>
+                    <div class="feature-icon">✨</div>
+                    <h3 class="feature-title">Free Sebum</h3>
+                    <p>Kulit wajah bebas minyak sepanjang hari berkat formula khusus dengan Amazonian Clay.</p>
                 </div>
-                
                 <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-shield-alt"></i>
-                    </div>
-                    <h3 class="feature-title">Food Grade Silikon</h3>
-                    <p class="feature-description">Terbuat dari silikon medis berkualitas tinggi, BPA-free, dan aman untuk kesehatan keluarga.</p>
+                    <div class="feature-icon">☀️</div>
+                    <h3 class="feature-title">SPF 21 PA++</h3>
+                    <p>Perlindungan optimal dari sinar UV yang berbahaya untuk kulit wajah Anda.</p>
                 </div>
-                
                 <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-thermometer-half"></i>
-                    </div>
-                    <h3 class="feature-title">Tahan Panas & Dingin</h3>
-                    <p class="feature-description">Mampu menahan suhu -40°C hingga 200°C. Cocok untuk minuman panas maupun dingin.</p>
+                    <div class="feature-icon">💖</div>
+                    <h3 class="feature-title">Light Feel</h3>
+                    <p>Tekstur halus yang ringan di kulit, tidak terasa berat atau cakey.</p>
                 </div>
-                
                 <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-tint"></i>
-                    </div>
-                    <h3 class="feature-title">Anti Bocor 100%</h3>
-                    <p class="feature-description">Desain tutup rapat dengan seal ganda yang menjamin tidak akan bocor meski dibawa kemana-mana.</p>
+                    <div class="feature-icon">👌</div>
+                    <h3 class="feature-title">Matte Finish</h3>
+                    <p>Hasil akhir matte yang sempurna untuk tampilan segar sepanjang hari.</p>
                 </div>
-                
                 <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-recycle"></i>
-                    </div>
-                    <h3 class="feature-title">Ramah Lingkungan</h3>
-                    <p class="feature-description">Kurangi sampah plastik dengan botol yang dapat digunakan berulang kali hingga bertahun-tahun.</p>
+                    <div class="feature-icon">🌈</div>
+                    <h3 class="feature-title">3 Pilihan Warna</h3>
+                    <p>Tersedia dalam 3 shade yang bisa disesuaikan dengan warna kulit Anda.</p>
                 </div>
-                
                 <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-palette"></i>
-                    </div>
-                    <h3 class="feature-title">Pilihan Warna</h3>
-                    <p class="feature-description">Tersedia dalam berbagai warna menarik yang sesuai dengan gaya dan kepribadian Anda.</p>
+                    <div class="feature-icon">✅</div>
+                    <h3 class="feature-title">BPOM Terdaftar</h3>
+                    <p>Sudah terdaftar BPOM sehingga aman untuk penggunaan sehari-hari.</p>
                 </div>
             </div>
         </div>
     </section>
-
-    <!-- Product Gallery -->
+    
+    <!-- Gallery Section -->
     <section class="gallery">
         <div class="container">
             <h2 class="section-title">Galeri Produk</h2>
-            <p class="section-subtitle">Lihat detail dan keunggulan botol lipat silikon premium kami</p>
-            
             <div class="gallery-grid">
                 <div class="gallery-item">
-                    <img src="https://down-id.img.susercontent.com/file/sg-11134201-7rblz-m5i769fiwd7ibf.webp" alt="Keunggulan Produk">
+                    <img src="https://down-id.img.susercontent.com/file/e7a640bced99f351e699d66bb3e961a3.webp" alt="AZZURA Compact Powder">
                 </div>
                 <div class="gallery-item">
-                    <img src="https://down-id.img.susercontent.com/file/sg-11134201-7rbkz-m5i769nakygkb7.webp" alt="Fitur Anti Bocor">
+                    <img src="https://down-id.img.susercontent.com/file/3b244646d833da3294f8c88b25ebc448.webp" alt="AZZURA Compact Powder">
                 </div>
                 <div class="gallery-item">
-                    <img src="https://down-id.img.susercontent.com/file/sg-11134201-7rbmp-m5i769wq77b40f.webp" alt="Desain Ergonomis">
+                    <img src="https://down-id.img.susercontent.com/file/e9aa541f53b221c9414fe3ebf705622c.webp" alt="AZZURA Compact Powder">
                 </div>
                 <div class="gallery-item">
-                    <img src="https://down-id.img.susercontent.com/file/sg-11134201-7rbmw-m5i76a65tc9a55.webp" alt="Pilihan Warna">
-                </div>
-                <div class="gallery-item">
-                    <img src="https://down-id.img.susercontent.com/file/sg-11134201-7rbme-m5i76aabnaxj6b.webp" alt="Spesifikasi Lengkap">
+                    <img src="https://down-id.img.susercontent.com/file/c1a14b1c3e9e17305e6afe54829767c4.webp" alt="AZZURA Compact Powder">
                 </div>
             </div>
         </div>
     </section>
-
-    <!-- How to Use -->
-    <section class="how-to-use">
-        <div class="container">
-            <h2 class="section-title">Cara Penggunaan</h2>
-            <p class="section-subtitle">Mudah digunakan dalam 3 langkah sederhana</p>
-            
-            <div class="steps">
-                <div class="step">
-                    <div class="step-number">1</div>
-                    <h3 class="step-title">Buka & Bentangkan</h3>
-                    <p class="step-description">Tarik bagian atas botol untuk membentangkannya dari posisi lipat ke ukuran penuh 550ml.</p>
-                </div>
-                
-                <div class="step">
-                    <div class="step-number">2</div>
-                    <h3 class="step-title">Isi Air</h3>
-                    <p class="step-description">Isi dengan air, jus, atau minuman favorit Anda. Pastikan tutup terpasang dengan rapat.</p>
-                </div>
-                
-                <div class="step">
-                    <div class="step-number">3</div>
-                    <h3 class="step-title">Lipat Kembali</h3>
-                    <p class="step-description">Setelah selesai, kosongkan dan lipat kembali untuk menghemat ruang hingga 70%.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Testimonials -->
+    
+    <!-- Testimonials Section -->
     <section class="testimonials">
         <div class="container">
             <h2 class="section-title">Apa Kata Pelanggan Kami?</h2>
-            <p class="section-subtitle">Testimoni nyata dari ribuan pelanggan puas</p>
-            
             <div class="testimonials-grid">
-                <div class="testimonial">
-                    <p class="testimonial-text">Botolnya benar-benar praktis banget! Pas traveling ga makan tempat di tas. Kualitasnya juga bagus, udah 6 bulan pakai masih awet dan ga bocor sama sekali.</p>
-                    <div class="testimonial-author">
-                        <div class="author-avatar">S</div>
-                        <div class="author-info">
-                            <h4>Sari Dewi</h4>
-                            <p>Ibu Rumah Tangga, Jakarta</p>
-                            <div class="rating">★★★★★</div>
-                        </div>
-                    </div>
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"Saya sudah mencoba banyak compact powder, tapi AZZURA ini benar-benar berbeda! Wajah saya bebas minyak sepanjang hari dan tidak terasa berat sama sekali."</p>
+                    <div class="testimonial-author">- Sarah, 28 tahun</div>
+                    <div class="testimonial-rating">★★★★★</div>
                 </div>
-                
-                <div class="testimonial">
-                    <p class="testimonial-text">As a fitness enthusiast yang sering gym, botol ini jadi andalan banget. Bisa dilipat jadi kecil, tapi kapasitasnya cukup buat workout. Anti bocor juga!</p>
-                    <div class="testimonial-author">
-                        <div class="author-avatar">R</div>
-                        <div class="author-info">
-                            <h4>Rizky Pratama</h4>
-                            <p>Personal Trainer, Surabaya</p>
-                            <div class="rating">★★★★★</div>
-                        </div>
-                    </div>
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"Produk ini benar-benar worth it dengan harganya. Beli 1 gratis 1 lagi! Hasilnya matte dan natural, cocok untuk sehari-hari."</p>
+                    <div class="testimonial-author">- Dian, 35 tahun</div>
+                    <div class="testimonial-rating">★★★★★</div>
                 </div>
-                
-                <div class="testimonial">
-                    <p class="testimonial-text">Sempat ragu belinya, tapi setelah pakai ternyata bagus banget! Anak-anak juga suka karena warnanya lucu. Gampang dibersihkan dan tahan lama.</p>
-                    <div class="testimonial-author">
-                        <div class="author-avatar">M</div>
-                        <div class="author-info">
-                            <h4>Maya Sinta</h4>
-                            <p>Karyawan Swasta, Bandung</p>
-                            <div class="rating">★★★★★</div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="testimonial">
-                    <p class="testimonial-text">Perfect untuk mahasiswa seperti saya! Hemat banget karena ga perlu beli air kemasan terus. Botolnya ringan, praktis, dan bisa muat di tas laptop.</p>
-                    <div class="testimonial-author">
-                        <div class="author-avatar">A</div>
-                        <div class="author-info">
-                            <h4>Andi Rahman</h4>
-                            <p>Mahasiswa, Yogyakarta</p>
-                            <div class="rating">★★★★★</div>
-                        </div>
-                    </div>
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"Sebagai orang dengan kulit berminyak, produk ini jadi penyelamat! Tidak perlu touch-up berkali-kali dan perlindungan SPF-nya sangat membantu."</p>
+                    <div class="testimonial-author">- Rina, 42 tahun</div>
+                    <div class="testimonial-rating">★★★★☆</div>
                 </div>
             </div>
         </div>
     </section>
-
-    <!-- Pricing Banner -->
-    <section class="pricing-banner" id="pricing">
+    
+    <!-- FAQ Section -->
+    <section class="faq">
         <div class="container">
-            <div class="pricing-content">
-                <h2 class="section-title">PROMO SPESIAL HARI INI!</h2>
-                <p style="font-size: 1.3rem; margin-bottom: 30px;">Jangan sampai menyesal, stok terbatas!</p>
-                
-                <div class="price-comparison">
-                    <div class="price-option">
-                        <h3 class="price-label">HARGA EKONOMIS</h3>
-                        <div class="old-price">Rp 207.000</div>
-                        <div class="current-price">Rp 139.000</div>
-                        <p>1 Botol Lipat Silikon</p>
-                        <div class="savings">HEMAT 33%</div>
-                    </div>
-                    
-                    <div class="price-option popular" style="position: relative;">
-                        <h3 class="price-label">SPESIAL PROMO</h3>
-                        <div class="old-price">Rp 335.000</div>
-                        <div class="current-price">Rp 225.000</div>
-                        <p><strong>BELI 1 GRATIS 1 + GRATIS ONGKIR</strong></p>
-                        <div class="savings">HEMAT 33% + GRATIS ONGKIR</div>
-                    </div>
-                </div>
-
-                <div style="margin: 40px 0;">
-                    <p style="font-size: 1.1rem; margin-bottom: 10px;">⚡ <strong>BONUS EKSKLUSIF:</strong></p>
-                    <p>✅ Garansi 1 Tahun<br>
-                    ✅ Panduan Perawatan Digital<br>
-                    ✅ Customer Support 24/7</p>
-                </div>
-
-                <a href="https://nava.orderonline.id/checkout-silicone-folding-water-bottle" class="final-cta" target="_blank">
-                    <i class="fas fa-bolt"></i> AMBIL PROMO SEKARANG JUGA!
-                </a>
-                
-                <p style="margin-top: 20px; font-size: 0.9rem; opacity: 0.8;">
-                    <i class="fas fa-shield-alt"></i> Pembayaran 100% Aman | <i class="fas fa-truck"></i> Gratis Ongkir Seluruh Indonesia
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <h3 class="footer-title">Jangan Tunda Lagi!</h3>
-                <p class="footer-description">
-                    Ribuan orang sudah merasakan manfaatnya. Bergabunglah dengan mereka yang telah memilih gaya hidup yang lebih praktis dan ramah lingkungan dengan Botol Lipat Silikon Premium.
-                </p>
-                
-                <a href="https://nava.orderonline.id/checkout-silicone-folding-water-bottle" class="final-cta" target="_blank">
-                    <i class="fas fa-shopping-cart"></i> PESAN SEKARANG - STOK TERBATAS!
-                </a>
+            <h2 class="section-title">Pertanyaan yang Sering Diajukan</h2>
+            
+            <div class="faq-item">
+                <div class="faq-question">Apa saja shade yang tersedia?</div>
+                <p>AZZURA Compact Powder tersedia dalam 3 shade: 01 Light Beige, 02 Natural, dan 03 Ivory. Pilih yang paling sesuai dengan warna kulit Anda.</p>
             </div>
             
-            <div class="copyright">
-                <p>&copy; 2025 Botol Lipat Silikon Premium. Semua hak cipta dilindungi.</p>
-                <p>Hubungi kami untuk pertanyaan lebih lanjut.</p>
+            <div class="faq-item">
+                <div class="faq-question">Apakah produk ini sudah terdaftar BPOM?</div>
+                <p>Ya, produk ini sudah terdaftar BPOM dengan nomor NA18201205514, NA18201205515, dan NA18201205516 untuk masing-masing shade.</p>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">Berapa lama efek matte-nya bertahan?</div>
+                <p>Biasanya bertahan 8-10 jam tergantung kondisi kulit dan aktivitas. Untuk kulit sangat berminyak mungkin perlu touch-up setelah 6-7 jam.</p>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">Apakah ada garansi untuk produk ini?</div>
+                <p>Kami menjamin 100% kepuasan pelanggan. Jika produk tidak sesuai ekspektasi, Anda bisa mengembalikan dalam kondisi belum digunakan dan kami akan mengembalikan uang Anda.</p>
             </div>
         </div>
-    </footer>
-
+    </section>
+    
+    <!-- Guarantee Section -->
+    <section class="guarantee">
+        <div class="container">
+            <div class="guarantee-icon">💯</div>
+            <h2>Garansi Kepuasan 100%</h2>
+            <p class="guarantee-text">Kami begitu yakin dengan kualitas AZZURA Compact Powder sehingga kami berani memberikan garansi uang kembali jika Anda tidak puas dengan produk kami. Tidak ada risiko, yang ada hanya wajah segar dan matte sepanjang hari!</p>
+        </div>
+    </section>
+    
+    <!-- Footer CTA -->
+    <section class="footer-cta">
+        <div class="container">
+            <h2>Jangan Lewatkan Promo Spesial Ini!</h2>
+            <p>Beli 1 Gratis 1 hanya Rp 199.999. Promo terbatas, stok tidak akan bertahan lama!</p>
+            <a href="https://nava.orderonline.id/azzura-compact-powder" class="cta-button">PESAN SEKARANG JUGA</a>
+        </div>
+    </section>
+    
     <script>
-        // Dynamic Counter Animation
-        function animateCounter(elementId, start, end, duration) {
-            const element = document.getElementById(elementId);
-            const range = end - start;
-            const startTime = performance.now();
-            
-            function updateCounter(currentTime) {
-                const elapsed = currentTime - startTime;
-                const progress = Math.min(elapsed / duration, 1);
-                const current = Math.floor(progress * range + start);
-                element.textContent = current;
-                
-                if (progress < 1) {
-                    requestAnimationFrame(updateCounter);
-                }
-            }
-            
-            requestAnimationFrame(updateCounter);
-        }
-
-        // Dynamic viewers counter (fluctuating)
-        function updateViewers() {
-            const baseViewers = 2800;
-            const variation = Math.floor(Math.random() * 100) + 1;
-            const currentViewers = baseViewers + variation;
-            document.getElementById('viewers').textContent = currentViewers.toLocaleString();
-        }
-
-        // Dynamic stock counter (decreasing)
-        let currentStock = 47;
-        function updateStock() {
-            if (currentStock > 15 && Math.random() < 0.3) {
-                currentStock--;
-                document.getElementById('stock').textContent = currentStock;
-            }
-        }
-
         // Countdown Timer
         function updateCountdown() {
-            const now = new Date().getTime();
-            const tomorrow = new Date();
-            tomorrow.setDate(tomorrow.getDate() + 1);
-            tomorrow.setHours(0, 0, 0, 0);
-            const distance = tomorrow.getTime() - now;
-
-            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
+            const now = new Date();
+            const endOfDay = new Date();
+            endOfDay.setHours(23, 59, 59, 999);
+            
+            const diff = endOfDay - now;
+            
+            const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+            
             document.getElementById('hours').textContent = hours.toString().padStart(2, '0');
             document.getElementById('minutes').textContent = minutes.toString().padStart(2, '0');
             document.getElementById('seconds').textContent = seconds.toString().padStart(2, '0');
         }
-
-        // Smooth scrolling for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                }
-            });
-        });
-
-        // Intersection Observer for animations
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
-        };
-
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.style.opacity = '1';
-                    entry.target.style.transform = 'translateY(0)';
-                }
-            });
-        }, observerOptions);
-
-        // Observe elements for animation
-        document.addEventListener('DOMContentLoaded', function() {
-            // Initialize counters
-            setTimeout(() => animateCounter('viewers', 0, 2847, 2000), 500);
-            setTimeout(() => animateCounter('stock', 0, 47, 1500), 800);
-
-            // Update dynamic content
-            updateCountdown();
-            setInterval(updateCountdown, 1000);
-            setInterval(updateViewers, 5000);
-            setInterval(updateStock, 15000);
-
-            // Animate elements on scroll
-            const animatedElements = document.querySelectorAll('.feature-card, .testimonial, .step, .gallery-item');
-            animatedElements.forEach(el => {
-                el.style.opacity = '0';
-                el.style.transform = 'translateY(30px)';
-                el.style.transition = 'all 0.6s ease-out';
-                observer.observe(el);
-            });
-
-            // Add floating animation to hero image
-            const heroImage = document.querySelector('.hero-image img');
-            if (heroImage) {
-                heroImage.style.animation = 'float 6s ease-in-out infinite';
-            }
-
-            // Add pulse effect to CTA buttons
-            const ctaButtons = document.querySelectorAll('.cta-button, .final-cta');
-            ctaButtons.forEach(button => {
-                button.addEventListener('mouseenter', function() {
-                    this.style.animation = 'pulse 0.5s ease-in-out';
-                });
-                button.addEventListener('animationend', function() {
-                    this.style.animation = '';
-                });
-            });
-
-            // Add click tracking (you can integrate with analytics)
-            document.querySelectorAll('a[href*="orderonline"]').forEach(link => {
-                link.addEventListener('click', function() {
-                    // Track conversion event here
-                    console.log('Order button clicked');
-                });
-            });
-        });
-
-        // Prevent right-click and text selection (optional security)
-        document.addEventListener('contextmenu', e => e.preventDefault());
-        document.addEventListener('selectstart', e => e.preventDefault());
         
-        // Add urgency notifications
-        function showUrgencyPopup() {
-            const messages = [
-                "⚡ 5 orang baru saja memesan!",
-                "🔥 Stok tinggal sedikit!",
-                "💨 2 orang sedang checkout sekarang!",
-                "⏰ Promo berakhir hari ini!"
-            ];
-            
-            const message = messages[Math.floor(Math.random() * messages.length)];
+        setInterval(updateCountdown, 1000);
+        updateCountdown();
+        
+        // Auto Pop-up after 5 seconds
+        setTimeout(() => {
             const popup = document.createElement('div');
-            popup.style.cssText = `
-                position: fixed;
-                top: 20px;
-                right: 20px;
-                background: linear-gradient(135deg, #ff6b6b, #ee5a24);
-                color: white;
-                padding: 15px 20px;
-                border-radius: 10px;
-                box-shadow: 0 10px 30px rgba(0,0,0,0.3);
-                z-index: 9999;
-                font-weight: bold;
-                animation: slideInRight 0.5s ease-out;
-                max-width: 300px;
+            popup.style.position = 'fixed';
+            popup.style.bottom = '20px';
+            popup.style.right = '20px';
+            popup.style.backgroundColor = 'white';
+            popup.style.padding = '20px';
+            popup.style.borderRadius = '10px';
+            popup.style.boxShadow = '0 5px 15px rgba(0,0,0,0.2)';
+            popup.style.zIndex = '1000';
+            popup.style.maxWidth = '300px';
+            popup.innerHTML = `
+                <h3 style="margin-bottom: 10px;">🔥 PROMO TERBATAS!</h3>
+                <p style="margin-bottom: 15px;">Hanya tersisa 12 stok untuk promo Beli 1 Gratis 1 hari ini!</p>
+                <a href="https://nava.orderonline.id/azzura-compact-powder" style="display: inline-block; background-color: #e63946; color: white; padding: 10px 20px; border-radius: 5px; text-decoration: none; font-weight: bold;">PESAN SEKARANG</a>
+                <button onclick="this.parentElement.remove()" style="position: absolute; top: 5px; right: 5px; background: none; border: none; font-size: 16px; cursor: pointer;">×</button>
             `;
-            popup.textContent = message;
             document.body.appendChild(popup);
-            
-            setTimeout(() => {
-                popup.style.animation = 'slideInRight 0.5s ease-out reverse';
-                setTimeout(() => popup.remove(), 500);
-            }, 4000);
-        }
-
-        // Show urgency popup periodically
-        setTimeout(showUrgencyPopup, 10000);
-        setInterval(showUrgencyPopup, 45000);
+        }, 5000);
     </script>
 </body>
 </html>
